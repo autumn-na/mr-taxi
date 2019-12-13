@@ -1,13 +1,19 @@
-from flask import Flask, escape, request
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+dest = ''
 
 @app.route('/')
-def hello():
-    name = request.args.get("name", "Flask")
-    return f'Hello, {escape(name)}!'
+def hello_world():
+    return 'Hello World!'
 
+@app.route('/setdest')
+def ret_dest():
+    global dest
 
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port="8080")
+    dest = request.args.get('dest', "")
+    return 'Destination Set! ' + dest
+
+if __name__ == '__main__':
+    app.run()
