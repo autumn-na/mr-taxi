@@ -3,25 +3,27 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-dest = ''
-
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'MR.TAXI'
 
-@app.route('/setdest')
-def set_dest():
+@app.route('/pickup')
+def pickup():
+    return 'PickUp!'
+
+@app.route('/arrive')
+def arrive():
     global dest
-    dest = request.args.get('dest', "default")
 
-    return 'Destination Set! ' + dest
+    cost = request.args.get('cost', 0)
+    json_cost = {'cost' : cost}
 
-@app.route('/getdest')
-def get_dest():
+    return jsonify(json_cost)
+
+@app.route('/pay')
+def pay():
     global dest
-    json_dest = {'dest' : dest}
-
-    return jsonify(json_dest)
+    dest = ''
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
