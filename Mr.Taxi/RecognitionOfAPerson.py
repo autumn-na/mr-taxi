@@ -3,7 +3,6 @@ from matplotlib import pyplot as plt
 
 ourFace = cv2.imread("../image/recognizeTest.png")
 
-
 face_cascade = cv2.CascadeClassifier(
     '../haarcascades/haarcascade_frontalface_default.xml'
 )
