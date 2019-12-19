@@ -1,0 +1,16 @@
+from imuread import ImuRead 
+import datetime
+
+class pay:
+    
+    def__init__(self):
+	      self.imu=ImuRead('/diagnostics')
+
+
+   def distancecalculator(self,imudistance):
+	      r,p,y = self.imu.get_data()   
+	      #distance 에 imu 에서 얻어온 거리를 넣어야 합니다
+        distance = y
+        pay=3000
+        a=distance//1
+        pay+=a*100
