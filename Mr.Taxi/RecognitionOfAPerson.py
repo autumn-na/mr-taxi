@@ -9,6 +9,7 @@ face_cascade = cv2.CascadeClassifier(
 
 faces = face_cascade.detectMultiScale(ourFace, 1.03, 5)
 
+print(type(faces))
 print(faces.shape)
 print("Number of faces detected: " + str(faces.shape[0]))
 
