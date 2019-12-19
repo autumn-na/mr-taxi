@@ -1,16 +1,19 @@
 import cv2
+import numpy as np
+
 
 class FaceFinder(object):
     def __init__(self):
-        self.face_cascade = cv2.CascadeClassifier('../haarcascades/haarcascade_frontalface_default.xml')
-        self.faces = None
+        pass
+        #self.face_cascade = cv2.CascadeClassifier('../haarcascades/haarcascade_frontalface_default.xml')
+        #self.face_cascade.load('')
+        #self.faces = None
 
     def getFace(self, _frame):
-        self.faces = self.face_cascade.detectMultiScale(_frame, 1.03, 5)
+        pass
+        #self.faces = self.face_cascade.detectMultiScale(_frame, 1.03, 5)
 
-        return self.faces
-
-
+        #return np.array(self.faces)
 
 """
 print(faces.shape)
