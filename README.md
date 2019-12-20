@@ -1,2 +1,2 @@
 # mr-taxi
- Kookmin Univ. AD Project Group 2-4
+ Kookmin Univ. AD Project (Class 2, Group 4)
