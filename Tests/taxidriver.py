@@ -2,10 +2,9 @@ try:
     import urllib2  # python2
 except:
     import urllib.request
-import random
 import json
 import time
-from facefinder import *
+from Tests.facefinder import *
 
 URL_ROOT = 'http://10.42.0.165:8080'
 LOCAL_URL_ROOT = 'http://127.0.0.1:8080'

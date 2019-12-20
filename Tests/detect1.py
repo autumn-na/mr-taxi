@@ -3,8 +3,8 @@
 # -*- coding: utf-8 -*-
 
 
-from taxidriver import *
-from qrreader import *
+from Tests.taxidriver import *
+from Tests.qrreader import *
 
 reader = QRReader()
 print(reader.getQRText(cv2.imread('qr.png')))

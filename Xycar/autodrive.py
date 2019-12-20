@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-import rospy, time, cv2, math
+import rospy, math
 
 from linedetector import LineDetector
 from obstacledetector import ObstacleDetector
 from motordriver import MotorDriver
-from taxidriver import *
+from Tests.taxidriver import *
 
 class AutoDrive: 
     def __init__(self):
