@@ -4,9 +4,12 @@
 
 
 from taxidriver import *
+from qrreader import *
+
+reader = QRReader()
+print(reader.getQRText(cv2.imread('qr.png')))
 
 cap = cv2.VideoCapture('2.avi')
-
 
 class Taxi:
     def __init__(self):
