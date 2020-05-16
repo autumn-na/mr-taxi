@@ -3,7 +3,7 @@ Mr.Taxi
 국민대학교 소프트웨어융합대학 창의연계공학설계 입문 ADProject
 -------------
 #조원
-| name | student id | role |
+|  <center>name</center> |  <center>student id</center> |  <center>role</center> |
 |:--------|:--------:|--------:|
 | 나민형 | 20191583 | <center>xycar와 앱 연동 및 전체적 총괄</center> |
 | 류희재 | 20191587 | <center>앱 제작 및 얼굴 인식</center> |
