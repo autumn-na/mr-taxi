@@ -1,6 +1,6 @@
 Mr.Taxi
 =============
-국민대학교 소프트웨어융합대학 창의연계공학설계 입문 ADProject
+국민대학교 소프트웨어융합대학 창의연계공학설계입문 ADProject
 -------------
 # 조원
 |  <center>name</center> |  <center>student id</center> |  <center>role</center> |
